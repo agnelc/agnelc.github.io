@@ -1,7 +1,10 @@
 $( document ).ready(function() {
+
 	
-	"use strict";
 	
+var dYear = new Date();
+var nYear = dYear.getFullYear();
+		$('.getYear').html(nYear);
 	$('.employer .hidden-content').hide();
 	$('.accordion .tab').on('click', function() {
   	$(this).find('.employer > .hidden-content').slideToggle();
@@ -120,6 +123,8 @@ $('#ajax-content').bind('contentchanged', function() {
     });
 
 window.clearTimeout(myVar);
+
+
 
 });
 
